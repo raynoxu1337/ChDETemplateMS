@@ -2,7 +2,7 @@
 This is the template project to build your c++ projects using [ChaDevelopmentEnvironment](https://github.com/raynoxu1337/ChaDE). Just clone it or download a zip and use with CDE. 
 
 ## Usage
-To build your C++ projects you need first configure with CMake, there is release configuration and debug configuration. After configure task is done, the build task can be run and you can then run your program. It is deffinitelly possible to expand the tasks to also have a clang build option, but there is no real need for that to be fair.
+To build your C++ projects you need first configure with CMake, there is release configuration and debug configuration using build tasts in the VsCode. After configure task is done, the build task can be run and you can then run your program from the build dir using VSCode's debugger, from terminal or just running exe from GUI. It is deffinitelly possible to expand the tasks to also have a clang build option, but there is no real need for that to be fair.
 
 ## CMakeLists.txt
 You can edit the CMakeLists.txt to change the c/c++ standard. It by default includes all the sources in the directory so no need to thank me. When you add a package in vcpkg you will need to add whatever vcpkg tells you to paste into the CMakeLists.txt.
