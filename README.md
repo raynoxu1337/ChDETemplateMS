@@ -11,7 +11,7 @@ As an example you want to add "restclient-cpp" package. You would install it on 
 
 The VcPkg will tell you to add it to CMakeLists.txt using:
 > find_package(restclient-cpp CONFIG REQUIRED)
-target_link_libraries(main PRIVATE restclient-cpp)
+> target_link_libraries(main PRIVATE restclient-cpp)
 
 So just paste it to your CMakeLists.txt and you can use it in your project, literally that simple, almost as easy as npm!
 
