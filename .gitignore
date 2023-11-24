@@ -1,0 +1,3 @@
+# just ignore the build dir lolzers
+/build-debug*
+/build-release*

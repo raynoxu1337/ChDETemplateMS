@@ -1,0 +1,15 @@
+{
+    "configurations": [
+        {
+            "name": "MinGW 64 Static (Default)",
+            "includePath": [
+                "${workspaceFolder}/**", "${env:VCPKG_ROOT}/installed/x64-mingw-static/include/**"
+            ],
+            "compilerPath": "${env:CHAD_GPP_FULL_PATH}",
+            "cStandard": "c17",
+            "cppStandard": "gnu++17",
+            "intelliSenseMode": "windows-gcc-x64"
+        }
+    ],
+    "version": 4
+}

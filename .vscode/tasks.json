@@ -1,0 +1,71 @@
+{
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "Cmake Configure Release",
+            "command": "cmake",
+            "args": [
+                "-B build-release",
+                "-G \"MinGW Makefiles\"",
+                "-DVCPKG_TARGET_TRIPLET=x64-mingw-static",
+                "-DCMAKE_BUILD_TYPE=Release",
+                "-DCMAKE_C_COMPILER=gcc",
+                "-DCMAKE_CXX_COMPILER=g++",
+                "-DCMAKE_MAKE_PROGRAM=make",
+                "-DCMAKE_TOOLCHAIN_FILE=${env:CHAD_VCPKG}",
+                "-S ${workspaceFolder}"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [],
+            "group": "build",
+            "detail": "Will configure release version."
+        },
+        {
+            "label": "Cmake build Release",
+            "command": "cmake",
+            "args": [
+                "--build",
+                "${workspaceFolder}\\build-release"
+            ],
+            "group": "build",
+            "type": "shell",
+            "detail": "Will compile release version."
+        },
+        {
+            "type": "shell",
+            "label": "Cmake Configure Debug",
+            "command": "cmake",
+            "args": [
+                "-B build-debug",
+                "-G \"MinGW Makefiles\"",
+                "-DVCPKG_TARGET_TRIPLET=x64-mingw-static",
+                "-DCMAKE_BUILD_TYPE=Debug",
+                "-DCMAKE_C_COMPILER=gcc",
+                "-DCMAKE_CXX_COMPILER=g++",
+                "-DCMAKE_MAKE_PROGRAM=make",
+                "-DCMAKE_TOOLCHAIN_FILE=${env:CHAD_VCPKG}",
+                "-S ${workspaceFolder}"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [],
+            "group": "build",
+            "detail": "Will configure release version."
+        },
+        {
+            "label": "Cmake build Debug",
+            "command": "cmake",
+            "args": [
+                "--build",
+                "${workspaceFolder}\\build-debug"
+            ],
+            "group": "build",
+            "type": "shell",
+            "detail": "Will compile release version."
+        }
+    ],
+    "version": "2.0.0"
+}
