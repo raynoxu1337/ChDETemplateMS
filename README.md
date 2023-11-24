@@ -1,5 +1,5 @@
 # Template project for ChaDevelopmentEnvironment
-This is the template project to build your c++ projects using ChaDevelopmentEnvironment. Just clone it or download a zip and use with CDE. 
+This is the template project to build your c++ projects using [ChaDevelopmentEnvironment](https://github.com/raynoxu1337/ChaDE). Just clone it or download a zip and use with CDE. 
 
 ## Usage
 To build your C++ projects you need first configure with CMake, there is release configuration and debug configuration. After configure task is done, the build task can be run and you can then run your program. It is deffinitelly possible to expand the tasks to also have a clang build option, but there is no real need for that to be fair.
