@@ -11,7 +11,6 @@
                 "-DCMAKE_BUILD_TYPE=Release",
                 "-DCMAKE_C_COMPILER=gcc",
                 "-DCMAKE_CXX_COMPILER=g++",
-                "-DCMAKE_MAKE_PROGRAM=make",
                 "-DCMAKE_TOOLCHAIN_FILE=${env:CHAD_VCPKG}",
                 "-S ${workspaceFolder}"
             ],
@@ -44,7 +43,6 @@
                 "-DCMAKE_BUILD_TYPE=Debug",
                 "-DCMAKE_C_COMPILER=gcc",
                 "-DCMAKE_CXX_COMPILER=g++",
-                "-DCMAKE_MAKE_PROGRAM=make",
                 "-DCMAKE_TOOLCHAIN_FILE=${env:CHAD_VCPKG}",
                 "-S ${workspaceFolder}"
             ],
