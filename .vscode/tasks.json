@@ -7,7 +7,7 @@
             "args": [
                 "-B build-release",
                 "-G \"MinGW Makefiles\"",
-                "-DVCPKG_TARGET_TRIPLET=x64-mingw-static",
+                "-DVCPKG_TARGET_TRIPLET=x64-mingw-dynamic",
                 "-DCMAKE_BUILD_TYPE=Release",
                 "-DCMAKE_C_COMPILER=gcc",
                 "-DCMAKE_CXX_COMPILER=g++",
@@ -39,7 +39,7 @@
             "args": [
                 "-B build-debug",
                 "-G \"MinGW Makefiles\"",
-                "-DVCPKG_TARGET_TRIPLET=x64-mingw-static",
+                "-DVCPKG_TARGET_TRIPLET=x64-mingw-dynamic",
                 "-DCMAKE_BUILD_TYPE=Debug",
                 "-DCMAKE_C_COMPILER=gcc",
                 "-DCMAKE_CXX_COMPILER=g++",
